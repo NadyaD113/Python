@@ -53,21 +53,21 @@ class Department:
 
 
 # Перший менеджер та його команда
-Artem = Developer("Artem", "Moskalenko", 700, 1)
-Walter = Developer("Walter ", "White", 1500, 2)
-John = Developer("John", "Snow", 2500, 3)
-Rick = Designer("Rick", "Grimes", 500, 1, 0.7)
-Carlo = Manager("Carlo", "Ancelotti", 4500, 4, [Artem, Walter, John, Rick])
+Nadiia = Developer("Nadiia", "Denyshchych", 850, 1.5)
+Raven = Developer("Raven ", "Burgess", 2608, 4)
+Robert = Developer("Robert", "Harris", 250, 5)
+Sabrina = Designer("Sabrina", "Hooper", 5899, 5, 0.6)
+Lori = Manager("Lori", "Wagner", 4010, 4, [Nadiia, Raven, Robert, Sabrina])
 
 # Другий менеджер та його команда
-Jurgen = Developer("Jurgen ", "Klopp", 4100, 4)
-Jose = Developer("Jose ", "Mourinho", 4500, 5)
-Stefano = Designer("Stefano", "Pioli", 2100, 3, 0.9)
-Julian = Designer("Julian", "Nagelsmann", 600, 1, 0.8)
-Luciano = Designer("Luciano", "Spalletti", 5000, 8, 1)
-Antonio = Designer("Antonio", "Conte", 3500, 6, 0.6)
-Mikel = Manager("Mikel", "Arteta", 1500, 4, [Jurgen, Jose, Stefano, Julian, Luciano, Antonio])
+Cheryl = Developer("Cheryl ", "Mills", 5557, 4)
+Jessica = Developer("Jessica ", "Lopez", 5404, 4)
+Amanda = Designer("Amanda", "Parks", 2780, 7, 0.6)
+Dawn = Designer("Dawn", "Taylor", 3820, 8, 0.4)
+Lisa = Designer("Lisa", "Patterson", 781, 10, 1)
+Christopher = Designer("Christopher", "Davila", 1193, 1, 0.9)
+Steven = Manager("Steven", "Tucker", 750, 2, [Cheryl, Jessica, Amanda, Dawn, Lisa, Christopher])
 
-dep = Department([Carlo, Mikel])
+dep = Department([Lori, Steven])
 dep.give_salary()
 
